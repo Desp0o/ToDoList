@@ -1,0 +1,168 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #0B2B40;
+    box-sizing: content-box;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+    box-sizing: content-box;
+}
+
+.main_inner{
+    width: 100%;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    align-items:center ;
+    box-sizing: content-box;
+}
+
+.main_inner_top{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    color:#30A5BF;
+}
+
+.main_inner_bottom{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: content-box;
+}
+
+.goal_section{
+    width: 60%;
+    height: 100%;
+    padding-bottom: 50px;
+    box-sizing: content-box;
+}
+
+.x_button{
+    position: relative;
+    width: 34px;
+    height: 34px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 5px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    user-select: none;
+}
+
+.entered_goal{
+    display: flex;
+    align-items: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.goal_p{
+    width: 100%;
+    height: 34px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    padding-left: 1%;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.input_add{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+    margin-top: -3%;
+    justify-content: center;
+    gap: 10px;
+}
+
+#btnAdd{
+    width: 40px;
+    height: 15%;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.rules{
+    display: flex;
+    gap: 50px;
+    font-size: 18px;
+    color:#30A5BF;
+    font-weight: 600;
+}
+
+input,
+input::-webkit-input-placeholder {
+font-size: 20px;
+
+width: 40%;
+height: 20%;
+border-radius: 10px;
+border: none;
+padding-left: 10px;
+}
+
+
+@media (max-width:500px) {
+    input,
+    input::-webkit-input-placeholder {
+    font-size: 20px;
+    
+    width: 70%;
+    height: 20%;
+    border-radius: 10px;
+    border: none;
+    padding-left: 10px;
+    } 
+
+    .rules{
+        display: flex;
+        gap: 30px;
+        font-size: 14px;
+        color:#30A5BF;
+        font-weight: 600;
+    }
+
+    .goal_section{
+        width: 90%;
+    }
+
+    .main_inner{
+        margin-top: 8%;
+    }
+
+    .input_add{
+        margin-top: -10%;
+    }
+    
+}
